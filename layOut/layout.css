@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    width: 100%px;
+    background-color: #003049;
+    height: 50px;
+    display: flex;
+    color: blanchedalmond;
+    justify-content:space-around;
+    line-height: 50px;
+}
+
+header ul{
+    display: flex;
+    justify-content:space-around;
+    width: 300px;
+    
+}
+
+header ul li{
+    list-style: none;
+}
+
+header ul li a{
+    text-decoration: none;
+    color: blanchedalmond;
+}
+
+
+/*?//////////////////////////////////////////  */
+
+
+ .sec1{
+    width: 100%;
+    min-width: 500px;
+    background-color: #84a59d;
+    height: 500px;
+}
