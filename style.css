@@ -226,7 +226,7 @@ nav .fa-solid{
     transition: .5s;
 }
 #producth3firstchild{
-    bottom: 35%;
+    bottom: 42%;
 }
 .product-col .layer h3:hover{
     color: #fff;
@@ -283,6 +283,7 @@ h3{
     text-align: center;
     font-weight: 600;
     margin: 10px 0;
+    border-radius: 10px;
 }
 .course-col ul{
     padding-left: 5%
@@ -328,7 +329,8 @@ h3{
 }
 
 .team .layer{
-    background: transparent;
+    /* background: transparent; */
+    background: rgba(84, 93, 88, 0.7);
     height: 100%;
     width: 100%;
     top: 0;
