@@ -1,11 +1,14 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Poppins', sans-serif; */
+    font-family: 'Mukta', sans-serif;
 }
-
 h1{
     color: #2e8995;
+}
+.row{
+    display: flex;
 }
 .header{
     min-height: 100vh;
@@ -176,10 +179,14 @@ nav .fa-solid{
 /*-------------- Products ----------------*/
 
 .product{
-    width: 80%;
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 10%;
+    padding-right: 10%;
     margin: auto;
     text-align: center;
     padding-top: 100px;
+    background-color: #fff3f3;
 }
 .product-col{
     flex-basis: 31%;
@@ -196,29 +203,19 @@ nav .fa-solid{
 .product-col h3{
     margin-top: 16px;
     margin-bottom: 15px;
-    text-align: center;
+    text-align: center;   
 }
-
-.product-col .layer{
-    background: rgba(84, 93, 88, 0.7);;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    position: absolute;
-    border-radius: 10px;
-    
-}
-
 .product-col .layer h3{
-    width: 65%;
-    background-color: #fff;
-    /* height: 45px; */
+    width: 80%;
+    background-color: #f44336;
+    height: 45px;
     line-height: 45px;
     font-weight: 500;
-    color: #f44336;
+    color: #fff;
+ 
+   
     font-size: 26px;
-    bottom: 42%;
+    bottom: 12%;
     left: 50%;
     transform: translateX(-50%);
     position: absolute;
@@ -226,9 +223,18 @@ nav .fa-solid{
     transition: .5s;
 }
 #producth3firstchild{
-    bottom: 42%;
+    bottom: 12%;
 }
-.product-col .layer h3:hover{
+.product-col:hover .layer{
+    background: rgba(84, 93, 88, 0.7);;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    border-radius: 10px;   
+}
+.product-col:hover .layer h3{
     color: #fff;
     font-size: 30px;
     background-color: transparent;
@@ -253,11 +259,11 @@ nav .fa-solid{
     text-align: center;
     padding-top: 100px;
 }
-h1{
+.service h1{
     font-size: 36px;
     font-weight: 600;
 }
-p{
+.service p{
     color: #777;
     font-size: 14px;
     font-weight: 300;
@@ -279,7 +285,7 @@ p{
     box-sizing: border-box;
     transition: .5s;
 }
-h3{
+.service h3{
     text-align: center;
     font-weight: 600;
     margin: 10px 0;
@@ -312,13 +318,13 @@ h3{
 /*---------------- team ----------------*/
 
 .team{
-    width: 80%;
+    width: 70%;
     margin: auto;
     text-align: center;
     padding-top: 50px;
 }
 .team-col{
-    flex-basis: 49%;
+    flex-basis: 47%;
     border-radius: 10px;
     margin-bottom: 30px;
     position: relative;
@@ -326,11 +332,12 @@ h3{
 }
 .team-col img{
     width: 100%;
+    
 }
 
 .team .layer{
-    /* background: transparent; */
-    background: rgba(84, 93, 88, 0.7);
+    background: transparent;
+    /* background: rgba(84, 93, 88, 0.7); */
     height: 100%;
     width: 100%;
     top: 0;
@@ -443,114 +450,21 @@ h3{
     }
 }
 
-/*--------------Footer---------------*/
-
-.footer{
-    width: 100%;
-    text-align: center;
-    padding: 30px 0;
-}
-.footer h4{
-    margin-bottom: 25px;
-    margin-top: 20px;
-    font-weight: 600;
-}
-
-.icons .fa{
-    color: #f44336;
-    margin: 0 13px;
-    cursor: pointer;
-    padding: 18px 0;
-}
-.fa-heart-o{
-    color: #f44336;
-}
-
-
-
-/*---------- Blog Page -------------*/
-
-.blog-content{
-    width: 80%;
-    margin: auto;
-    padding: 60px 0;
-}
-.blog-left{
-    flex-basis: 65%;
-}
-.blog-right{
-    flex-basis: 32%;
-}
-.blog-left img{
-    width: 100%;
-}
-.blog-left h2{
-    color: #222;
-    font-weight: 600;
-    margin: 30px 0;
-}
-.blog-left p{
-    color: #999;
-    padding: 0;
-}
-
-.blog-right h3{
-    background: #f44336;
-    color: #fff;
-    padding: 7px 0;
-    font-size: 16px;
-    margin-bottom: 20px;
-}
-.blog-right div{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    color: #555;
-    padding: 8px;
-    box-sizing: border-box;
-}
-
-.comment-box{
-    border: 1px solid #ccc;
-    margin: 50px 0;
-    padding: 10px 20px;
-}
-
-.comment-box h3{
-    text-align: left;
-}
-.comment-form input, .comment-form textarea{
-    width: 100%;
-    padding: 10px;
-    margin: 15px 0;
-    box-sizing: border-box;
-    border: none;
-    outline: none;
-    background: #f0f0f0;
-}
-.comment-form button{
-    margin: 10px 0;
-}
-
-
-@media (max-width:700px){
-    .sub-header h1{
-        font-size: 24px;
-    }
-} 
 
 
 /*------- Contact Us Page ------------*/
-
-.location{
-    width: 80%;
+.contact-us{
     margin: auto;
-    padding: 80px 0;
-}
-.location iframe{
-    width: 100%;
+    padding-top: 100px;
+    /* text-align: center; */
 }
 
+.contact-us h1{
+    text-align: center;
+}
+.contact-us p{
+    text-align: center;
+}
 .contact-us{
     width: 80%;
     margin: auto;
@@ -558,12 +472,13 @@ h3{
 .contact-col{
     flex-basis: 48%;
     margin-bottom: 30px;
+    box-sizing: border-box;
 }
-
 .contact-col div{
     display: flex;
     align-items: center;
     margin-bottom: 40px;
+    margin-left: 50%;
 }
 
 .contact-col div .fa{
@@ -599,9 +514,74 @@ h3{
 
 
 
+/* -------------------footer --------------*/
+.footer{
+    margin-top: 100px;
 
+    background-color: #F4E2DE;
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
 
-
+.footer .row{
+    width: 70%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+    padding-top: 10px;
+    /* gap:1.5rem; */
+}
+.footer .row .footer-col{
+    /* flex:1 1 15rem; */
+    flex-basis: 200px;
+    display: flex;
+    flex-direction: column; 
+    
+}
+.footer .row .footer-col h3{
+    color:#333;
+    font-size: 28px;
+    padding: 5px;
+    text-align: left;
+    
+}
+.footer .row .footer-col a{
+    display: block;
+    color:#666;
+    font-size: 14px;
+    padding: 5px;  
+    text-decoration: none;
+    text-align: left;
+}
+.footer .row .footer-col p{
+    color:#666;
+    font-size: 14px;
+    padding: 5px;  
+    text-align: left;
+}
+.footer .row .footer-col a:hover{
+    color:var(--pink);
+    text-decoration: underline;
+}
+.footer .row .footer-col  img{
+    margin-top: 1rem;
+}
+.footer .social{
+    text-align: center;
+    border-top: .1rem solid rgba(0,0,0,.1);
+    margin-bottom: 40px;
+    margin-top: 100px;  
+}
+.icons .fa{
+    color: #f44336;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+.fa-heart-o{
+    color: #f44336;
+}
 
 
 

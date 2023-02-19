@@ -3,13 +3,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>ABC Optical
 </title>
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style/style.css">
 <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,600,700&display=swap" rel="stylesheet">
-<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">  -->
-<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"> -->
 <script src="https://kit.fontawesome.com/c29dc3841f.js" crossorigin="anonymous"></script>
-
-
 </head>
 <body>
     <section class="header">
@@ -20,10 +16,10 @@
                 <i class="fa-solid fa-close" onclick="hideNav()"></i>
                 <ul>
                     <li><a href="index.html">HOME</a></li>
-                    <li><a href="about.html">ABOUT</a></li>
-                    <li><a href="service.html">SERVICE</a></li>
+                    <li><a href="#aboutus">ABOUT</a></li>
+                    <li><a href="#service">SERVICE</a></li>
                     <li><a href="#product">PRODUCT</a></li>
-                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
                 </ul>
             </div>
             <i class="fa-solid fa-bars" onclick="showNav()"></i>
@@ -39,7 +35,7 @@
 
 <!------- about us content -------->
     
-<section class="about-us">
+<section class="about-us" id="aboutus">
     <div class="row">
         <div class="about-col">
             <h1>About Us</h1>     
@@ -81,7 +77,7 @@
     
 <!---------- service ----------->
     
-    <section class="service">
+    <section class="service" id="service">
         <h1>Services We Offer</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         <div class="row">
@@ -120,7 +116,16 @@
             </div>
         </div>
     </section>
+
+ <!------ Call To Action ------>
+
+<section class="cta">
     
+    <h1>Enroll For Our Various Online Courses<br>Anywhere From The World</h1>
+     <a href="https://www.youtube.com/c/EasyTutorialsVideo?sub_confirmation=1" class="hero-btn">Book Now</a>
+ 
+</section> 
+
 <!---------- team ---------->
     
     <section class="team">
@@ -135,7 +140,7 @@
                     </div>
                 </div>
                 <div class="team-col">
-                    <img src="images/teammate1.png">
+                    <img src="images/teammate2.png">
                     <div class="layer">
                         <h3>NEW YORK</h3>
                         <p>He is amazing</p>
@@ -158,7 +163,7 @@
                 <div class="testimonial-col">
                     <img src="images/user1.jpg">
                     <div> 
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquet turpis nulla, eleifend faucibus est sollicitudin ut. Maecenas ut venenatis ex, et dapibus purus.</p>
+                        <p>The service here is amazing! Genuine, professional opinions, no up-selling, just really wonderful service. They have such a great range of frames- very different to other “cookie-cutter” chain stores. Sales assistant, Kim, went above and beyond to help me find, fit and follow-up with my perfect frame. Will most definitely be going back to this store where you can find beautiful, unique frames with friendly, exceptional service. </p>
                         <h3>Christine Berkley</h3>
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
@@ -170,7 +175,9 @@
                 <div class="testimonial-col">
                     <img src="images/user2.jpg">
                     <div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquet turpis nulla, eleifend faucibus est sollicitudin ut. Maecenas ut venenatis ex, et dapibus purus.</p>
+                        <p> Eileen helped me out and went above and beyond to get my prescription sunglasses with my high script
+                            So happy with the service and would recommend going here to everyone
+                            </p>
                         <h3>David Byer</h3>
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
@@ -179,24 +186,94 @@
                         <i class="fa fa-star-half-o"></i>
                     </div>
                 </div>
-                
             </div>
     </section>
     
-<!------ Call To Action ------>
 
-<section class="cta">
-    
-       <h1>Enroll For Our Various Online Courses<br>Anywhere From The World</h1>
-        <a href="https://www.youtube.com/c/EasyTutorialsVideo?sub_confirmation=1" class="hero-btn">CONTACT US</a>
-    
-</section>    
+
+<!------- Contact Us ------->
+
+<section class="contact-us">
+    <h1>Contact Us</h1>
+    <p>We love to hear from you guys!</p>
+    <div class="row">
+        <div class="contact-col">
+            <div>
+                <i class="fa fa-home"></i>
+                <span>
+                    <h5>Xyz Road, Abc Building</h5>
+                    <p>Bangalore, Karnataka, IN</p>
+                </span>
+            </div>
+            <div>
+                <i class="fa fa-phone"></i>
+                <span>
+                    <h5>+1 0123456789</h5>
+                    <p>Monday to Saturday 10 Am to 6 Pm</p>
+                </span>
+            </div>
+            <div>
+                <i class="fa fa-envelope-o"></i>
+                <span>
+                    <h5>info@easytutorialspro.com</h5>
+                    <p>Email us your query</p>
+                </span>
+            </div>
+        </div>
+        <div class="contact-col">
+            <form method="post" action="contact-form-handler.php">
+            <input type="text" name="name" placeholder="Enter your name" required>
+            <input type="email" name="email" placeholder="Enter email address" required>
+            <input type="text" name="subject" placeholder="Enter your subject" required>
+            <textarea rows="8" name="message" placeholder="Message" required></textarea>
+            <button type="submit" class="hero-btn red-btn">Send Message</button>
+            </form> 
+        </div>
+    </div>
+</section>
  
 <!-------- footer ---------->
 
 <section class="footer">
-        <h4>About Us</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquet turpis nulla, eleifend faucibus est<br>sollicitudin ut. Maecenas ut venenatis ex, et dapibus purus.</p>
+
+    <div class="row">
+
+        <div class="footer-col">
+            <h3>Quick links</h3>
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Review</a>
+            <a href="#">FAQs</a>
+            
+        </div>
+
+        <div class="footer-col">
+            <h3>Open hours</h3>
+            <p>Mon – Thurs: 9am - 5.30pm </p>
+            <p>Fri: 9am - 9pm </p>
+            <p>Sat: 9am - 5pm </p>
+            <p>Sun: 10am - 5pm</p>
+        </div>
+
+        <div class="footer-col">
+            <h3>Our services</h3>
+            <a href="#">Find your fram</a>
+            <a href="#">Book an Eye Test</a>
+            <a href="#">Bulk Billing</a>
+            <a href="#">Special Offers</a>
+        </div>
+
+        <div class="footer-col">
+            <h3>Contact info</h3>
+            <a href="#">07 3256 7101</a>
+            <a href="#">info@abcoptical.com</a>
+            <a href="#">Shop 36, level 1, Myer Centre in the Queen Street Mall</a>
+            <img src="images/payment.png" alt="">
+        </div>
+
+    </div>
+
+    <div class="social"> 
         <div class="icons">
             <a href="https://www.youtube.com/c/EasyTutorialsVideo?sub_confirmation=1"><i class="fa fa-facebook"></i></a>
             <a href="https://www.youtube.com/c/EasyTutorialsVideo?sub_confirmation=1"><i class="fa fa-twitter"></i></a>
@@ -204,20 +281,41 @@
             <a href="https://www.youtube.com/c/EasyTutorialsVideo?sub_confirmation=1"><i class="fa fa-linkedin"></i></a>
             
         </div>
-        <a href="https://www.youtube.com/c/EasyTutorialsVideo?sub_confirmation=1" class="footer-link"><p>made with <i class="fa fa-heart-o"></i> by Easy Tutorials</p></a>
-</section>    
-  
-  
-<!----JavaScript for toggle menu---->
-<script>
-    var navBar= document.getElementById("navbar");
+        <a href="https://www.youtube.com/c/EasyTutorialsVideo?sub_confirmation=1" class="footer-link"><p>made with <i class="fa fa-heart-o"></i> by Frank Wang</p></a>
+    </div>
 
+</section>
+
+
+
+
+
+
+
+
+<script>
+// JavaScript for toggle menu
+    var navBar= document.getElementById("navbar");
     function showNav() {
         navBar.style.right = "0";
     }
-
     function hideNav() {
         navBar.style.right = "-200px";
+    }
+//smoothly scrolls the window to the element that the link refers to
+    var navLinks = document.querySelectorAll("nav ul a");
+
+    for (var i = 0; i < navLinks.length; i++) {
+        navLinks[i].addEventListener("click", function(event) {
+        event.preventDefault();
+        var targetId = this.getAttribute("href");
+        var targetElement = document.querySelector(targetId);
+        var targetPosition = targetElement.offsetTop;
+        window.scrollTo({
+            top: targetPosition,
+            behavior: "smooth"
+        });
+        });
     }
 </script> 
     
