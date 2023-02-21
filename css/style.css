@@ -7,6 +7,18 @@
 h1{
     color:#427247 ;
 }
+
+p{
+    line-height: 1.5rem;
+    font-size: 1rem;
+}
+li{
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+a{
+    font-size: 1rem;
+}
 section{
     min-height: 100vh;
     display: flex;
@@ -47,7 +59,6 @@ nav img{
 .navbar ul li a{
     color: #fff;
     text-decoration: none;
-    font-size: 14px;
 }
 .navbar ul li::after{
     content: '';
@@ -80,7 +91,6 @@ nav .fa-solid{
 }
 .text-box p{
     margin: 20px 0 40px;
-    font-size: 14px;
     color: #fff;
 }
 .text-box .important{
@@ -92,7 +102,6 @@ nav .fa-solid{
     color: #fff;
     border: 1px solid #fff;
     padding: 12px 34px;
-    font-size: 14px;
     background: transparent;
     position: relative;
     cursor: pointer;
@@ -158,8 +167,6 @@ nav .fa-solid{
 .about-col>p{
     padding: 10px 0 25px;
     color: #6c757d;
-    line-height: 22px;
-    font-size: 14px;
 }
 
 .hero-btn.red-btn{
@@ -187,7 +194,9 @@ nav .fa-solid{
 
 
 /*-------------- Products ----------------*/
-
+#product{
+    background-color: #F4EBD4;
+}
 .product{
     width: 100%;
     box-sizing: border-box;
@@ -196,13 +205,10 @@ nav .fa-solid{
     margin: auto;
     text-align: center;
     padding-top: 100px;
-    background-color: #F4EBD4;
 }
 
 .product>p{
     color: #6c757d;
-    line-height: 22px;
-    font-size: 14px;
     width: 60%;
     margin-left: auto;
     margin-right: auto;
@@ -281,7 +287,6 @@ nav .fa-solid{
     width: 80%;
     margin: auto;
     text-align: center;
-    padding-top: 100px;
 }
 .service h1{
     font-size: 36px;
@@ -289,11 +294,9 @@ nav .fa-solid{
 }
 .service>p{
     color: #6c757d;
-    font-size: 14px;
     width: 60%;
     margin-left: auto;
     margin-right: auto;
-    line-height: 22px;
     padding: 10px;
 }
 .row{
@@ -306,7 +309,7 @@ nav .fa-solid{
     flex-basis: 31%;
     background: #F4EBD4;
     border-radius: 10px;
-    margin-bottom: 5%;
+    /* margin-bottom: 5%; */
     padding: 20px 12px;
     box-sizing: border-box;
     transition: .5s;
@@ -323,9 +326,7 @@ nav .fa-solid{
 .course-col ul li{
     text-align: left;
     color: #6c757d;
-    font-size: 14px;
     font-weight: 300;
-    line-height: 25px;
     list-style: none; 
 }
 .service .fa-solid{
@@ -354,8 +355,6 @@ nav .fa-solid{
 }
 
 .team>p{
-    font-size: 14px;
-    line-height: 22px;
     color: #6c757d;
     width: 60%;
     margin-left: auto;
@@ -403,11 +402,11 @@ nav .fa-solid{
 .team .layer:hover h3{
     bottom: 49%;
     opacity: 1;
+    font-size: 2rem;
 }
 .team .layer p{
     width: 100%;
     color: #fff;
-    font-size: 14px;
     top: 0;
     left: 50%;
     /* top:55%； */
@@ -418,8 +417,6 @@ nav .fa-solid{
     box-sizing: border-box;
     padding-left: 100px;
     padding-right: 100px;
-    line-height: 22px;
-
 }
 .team .layer:hover p{
     top: 65%;
@@ -437,7 +434,9 @@ nav .fa-solid{
         top: 25%;
         opacity: 1; 
         padding-left: 20px;
-        padding-right: 20px;  
+        padding-right: 20px; 
+        font-size: 0.8rem; 
+        line-height: 1rem;
     }
 }
 
@@ -451,8 +450,6 @@ nav .fa-solid{
 }
 
 .testimonials > p{
-    font-size: 14px;
-    line-height: 22px;
     width: 60%;
     margin-left: auto;
     margin-right: auto;
@@ -478,8 +475,6 @@ nav .fa-solid{
 }
 .testimonial-col p{
     padding: 0;
-    font-size: 14px;
-    line-height: 22px;
     color: #6c757d;
 }
 .testimonial-col h3{
@@ -503,7 +498,7 @@ nav .fa-solid{
 /*-------- Call To Action ----------*/
 
 #calltoaction{
-    background-color: #B2D058;
+    /* background-color: #B2D058; */
     display: flex;
     align-items: center;
     
@@ -552,7 +547,6 @@ nav .fa-solid{
     margin-left: auto;
     margin-right: auto;
     color: #6c757d;
-    font-size: 14px;
     width: 60%;
     padding: 10px;
 
@@ -582,7 +576,6 @@ nav .fa-solid{
     
 .contact-col div p{
     padding: 0;
-    font-size: 14px;
     color: #6c757d;
 }
 .contact-col div h5{
