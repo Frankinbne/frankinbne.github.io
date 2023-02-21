@@ -193,10 +193,13 @@ nav .fa-solid{
     background-color: #F4EBD4;
 }
 
-.product p{
+.product>p{
     color: #6c757d;
     line-height: 22px;
     font-size: 14px;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
 }
 .product-col{
     flex-basis: 31%;
@@ -273,10 +276,12 @@ nav .fa-solid{
     font-size: 36px;
     font-weight: 600;
 }
-.service p{
+.service>p{
     color: #6c757d;
     font-size: 14px;
-
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
     line-height: 22px;
     padding: 10px;
 }
@@ -334,9 +339,14 @@ nav .fa-solid{
     padding-top: 50px;
 }
 
-.team p{
+.team>p{
     font-size: 14px;
     line-height: 22px;
+    color: #6c757d;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
 }
 .team-col{
     flex-basis: 47%;
@@ -362,6 +372,7 @@ nav .fa-solid{
 }
 .team .layer:hover{
     background: rgba(84, 93, 88, 0.7);
+    
 }
 .team .layer h3{
     width: 100%;
@@ -381,19 +392,26 @@ nav .fa-solid{
 }
 .team .layer p{
     width: 100%;
-    
     color: #fff;
     font-size: 14px;
-    bottom: 0;
+    top: 0;
     left: 50%;
+    /* top:55%； */
     transform: translateX(-50%);
     position: absolute;
     opacity: 0;
     transition: .5s;
+    box-sizing: border-box;
+    padding-left: 100px;
+    padding-right: 100px;
+    line-height: 22px;
+
 }
 .team .layer:hover p{
-    bottom: 40%;
+    top: 65%;
     opacity: 1;
+    
+    
 }
 
 
@@ -404,6 +422,16 @@ nav .fa-solid{
     margin: auto;
     padding-top: 100px;
     text-align: center;
+}
+
+.testimonials > p{
+    font-size: 14px;
+    line-height: 22px;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    color: #6c757d;
+    padding: 10px;
 }
 
 .testimonial-col{
@@ -424,6 +452,9 @@ nav .fa-solid{
 }
 .testimonial-col p{
     padding: 0;
+    font-size: 14px;
+    line-height: 22px;
+    color: #6c757d;
 }
 .testimonial-col h3{
     margin-top: 15px;
@@ -477,8 +508,15 @@ nav .fa-solid{
 .contact-us h1{
     text-align: center;
 }
-.contact-us p{
+.contact-us>p{
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    color: #6c757d;
+    font-size: 14px;
+    width: 60%;
+    padding: 10px;
+
 }
 .contact-us{
     width: 80%;
@@ -493,7 +531,7 @@ nav .fa-solid{
     display: flex;
     align-items: center;
     margin-bottom: 40px;
-    margin-left: 50%;
+    margin-left: 20%;
 }
 
 .contact-col div .fa{
@@ -505,6 +543,8 @@ nav .fa-solid{
     
 .contact-col div p{
     padding: 0;
+    font-size: 14px;
+    color: #6c757d;
 }
 .contact-col div h5{
     font-size: 20px;
@@ -526,7 +566,18 @@ nav .fa-solid{
     color: #777;
 }
 
+@media(max-width: 700px)
+{
 
+    .contact-col div{
+        display: flex;
+        align-items: center;
+        margin-bottom: 40px;
+        margin-left: 0%;
+    }
+
+
+}
 
 
 /* -------------------footer --------------*/
