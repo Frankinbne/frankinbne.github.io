@@ -195,7 +195,7 @@ nav .fa-solid{
 
 /*-------------- Products ----------------*/
 #product{
-    background-color: #F4EBD4;
+    background-color: rgb(251, 251, 251);
 }
 .product{
     width: 100%;
@@ -282,7 +282,14 @@ nav .fa-solid{
 } 
 
 /*---------- service --------*/
-
+#service{
+    width: 100%;
+    background-image: linear-gradient(rgba(255,255,255,0.9),rgba(255,255,255,0.9)),url('../images/service-background.jpg');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
 .service{
     width: 80%;
     margin: auto;
@@ -441,7 +448,9 @@ nav .fa-solid{
 }
 
 /*---------------- testimonials ------------------*/
-
+#review{
+    background-color: rgb(251, 251, 251);
+}
 .testimonials{
     width: 80%;
     margin: auto;
