@@ -7,10 +7,15 @@
 h1{
     color:#427247 ;
 }
+section{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
 .row{
     display: flex;
 }
-.header{
+header{
     min-height: 100vh;
     width: 100%;
     background-image: linear-gradient(rgba(18,54,58,0.7),rgba(18,54,58,0.7)),url('../images/background.jpg');
@@ -497,19 +502,29 @@ nav .fa-solid{
 
 /*-------- Call To Action ----------*/
 
+#calltoaction{
+    background-color: #B2D058;
+    display: flex;
+    align-items: center;
+    
+}
 
 .cta{
-    margin: 100px auto;
+    margin: auto;
+    min-height: 30vh;
     width: 80%;
     background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('../images/banner2.jpg');
     background-position: center;
     background-size: cover;
     border-radius: 10px;
     text-align: center;
-    padding: 100px 0;
+    padding: 200px 0;
+  
+
 }
 .cta h1{
     color: #fff;
+    margin-top: 9%;
     margin-bottom: 40px; 
     padding: 0; 
 }
@@ -609,7 +624,7 @@ nav .fa-solid{
 
 
 /* -------------------footer --------------*/
-.footer{
+footer{
     margin-top: 100px;
 
     background-color: #F4EBD4;
@@ -618,7 +633,7 @@ nav .fa-solid{
     padding: 30px 0;
 }
 
-.footer .row{
+footer .row{
     width: 70%;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -626,21 +641,21 @@ nav .fa-solid{
     padding-top: 10px;
     /* gap:1.5rem; */
 }
-.footer .row .footer-col{
+footer .row .footer-col{
     /* flex:1 1 15rem; */
     flex-basis: 200px;
     display: flex;
     flex-direction: column; 
     
 }
-.footer .row .footer-col h3{
+footer .row .footer-col h3{
     color:#333;
     font-size: 28px;
     padding: 5px;
     text-align: left;
     
 }
-.footer .row .footer-col a{
+footer .row .footer-col a{
     display: block;
     color:#666;
     font-size: 14px;
@@ -648,20 +663,20 @@ nav .fa-solid{
     text-decoration: none;
     text-align: left;
 }
-.footer .row .footer-col p{
+footer .row .footer-col p{
     color:#666;
     font-size: 14px;
     padding: 5px;  
     text-align: left;
 }
-.footer .row .footer-col a:hover{
+footer .row .footer-col a:hover{
     color:#C25152;
     text-decoration: underline;
 }
-.footer .row .footer-col  img{
+footer .row .footer-col  img{
     margin-top: 1rem;
 }
-.footer .social{
+footer .social{
     text-align: center;
     border-top: .1rem solid rgba(0,0,0,.1);
     margin-bottom: 40px;
