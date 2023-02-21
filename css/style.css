@@ -5,7 +5,7 @@
     font-family: 'Poppins',Arial, sans-serif;
 }
 h1{
-    color:#427247 ;
+    color:rgb(0, 153, 97);
 }
 
 p{
@@ -64,7 +64,7 @@ nav img{
     content: '';
     width: 0%;
     height: 2px;
-    background: #B2D058;
+    background: rgb(0, 153, 97);
     display: block;
     margin: auto;
     transition: .5s;    
@@ -94,7 +94,7 @@ nav .fa-solid{
     color: #fff;
 }
 .text-box .important{
-    color: #C25152;
+    color: rgb(0, 153, 97);
 }
 .hero-btn {
     display: inline-block;
@@ -106,12 +106,12 @@ nav .fa-solid{
     position: relative;
     cursor: pointer;
     transition: 1s;
-    border-radius: 10px;
+    border-radius: 50px;
 }
 
 .hero-btn:hover{
-    border: 1px solid #B2D058;
-    background: #B2D058;
+    border: 1px solid rgb(0, 153, 97);
+    background: rgb(0, 153, 97);
 }
 
 
@@ -170,13 +170,13 @@ nav .fa-solid{
 }
 
 .hero-btn.red-btn{
-    border: 1px solid #B2D058;
+    border: 2px solid rgb(0, 153, 97);
     background: transparent;
-    color: #B2D058;
+    color: rgb(0, 153, 97);
 }
 .hero-btn.red-btn:hover{
-    border: 1px solid #B2D058;
-    background: #B2D058;
+    border: 1px solid rgb(0, 153, 97);
+    background: rgb(0, 153, 97);
     color: #fff;
 }
 .hero-btn.red-btn::after{
@@ -238,7 +238,7 @@ nav .fa-solid{
     line-height: 45px;
     font-weight: 500;
     color: #fff;
-    border-radius: 10px;
+    border-radius: 50px;
  
    
     font-size: 26px;
@@ -338,10 +338,10 @@ nav .fa-solid{
 }
 .service .fa-solid{
     display: inline-block;
-    color: #f44336;
+    color: rgb(0, 153, 97);
 }
 .course-col:hover{
-    box-shadow: 0 0 30px 0px rgba(191, 64, 64, 0.2);
+    box-shadow: 0 0 30px 0px rgba(0, 0, 0, 0.7);
 }
 @media (max-width:700px){
     .row{
@@ -471,7 +471,7 @@ nav .fa-solid{
     border-radius: 10px;
     margin-bottom: 5%;
     text-align: left;
-    background: #F4EBD4;
+    background: rgb(237, 251, 240);
     padding: 25px;
     cursor: pointer;
     display: flex;
@@ -491,7 +491,7 @@ nav .fa-solid{
     text-align: left;
 }
 .testimonial-col .fa{
-    color: #f44336;
+    color: rgb(0, 153, 97);
 }
 
 @media(max-width:700px){
@@ -578,7 +578,7 @@ nav .fa-solid{
 
 .contact-col div .fa{
     font-size: 28px;
-    color: #f44336;
+    color: rgb(0, 153, 97);
     margin: 10px;
     margin-right: 30px;
 }
@@ -629,7 +629,7 @@ nav .fa-solid{
 footer{
     margin-top: 100px;
 
-    background-color: #F4EBD4;
+    background-color: rgb(237, 251, 240);
     width: 100%;
     text-align: center;
     padding: 30px 0;
@@ -672,7 +672,7 @@ footer .row .footer-col p{
     text-align: left;
 }
 footer .row .footer-col a:hover{
-    color:#C25152;
+    color:rgb(0, 153, 97);
     text-decoration: underline;
 }
 footer .row .footer-col  img{
@@ -685,13 +685,13 @@ footer .social{
     margin-top: 100px;  
 }
 .icons .fa{
-    color: #f44336;
+    color: rgb(0, 153, 97);
     margin: 0 13px;
     cursor: pointer;
     padding: 18px 0;
 }
 .fa-heart-o{
-    color: #f44336;
+    color: rgb(0, 153, 97);
 }
 
 
