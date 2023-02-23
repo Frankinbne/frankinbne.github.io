@@ -9,15 +9,15 @@ h1{
 }
 
 p{
-    line-height: 1.5rem;
-    font-size: 1rem;
+    line-height: 22px;
+    font-size: 14px;
 }
 li{
-    font-size: 1rem;
-    line-height: 1.5rem;
+    line-height: 22px;
+    font-size: 14px;
 }
 a{
-    font-size: 1rem;
+    font-size: 14;
 }
 section{
     min-height: 100vh;
@@ -157,6 +157,10 @@ nav .fa-solid{
     padding-bottom: 100px;
 }
 
+.about-us .row{
+    align-items: center;
+}
+
 .about-col{
     flex-basis: 48%;
     padding: 30px 2px;
@@ -204,7 +208,6 @@ nav .fa-solid{
     padding-right: 10%;
     margin: auto;
     text-align: center;
-    padding-top: 100px;
 }
 
 .product>p{
@@ -312,7 +315,7 @@ nav .fa-solid{
     justify-content: space-between;  
 }
   
-.course-col{
+.service-col{
     flex-basis: 31%;
     background: #F4EBD4;
     border-radius: 10px;
@@ -327,10 +330,10 @@ nav .fa-solid{
     margin: 10px 0;
     border-radius: 10px;
 }
-.course-col ul{
+.service-col ul{
     padding-left: 5%
 }
-.course-col ul li{
+.service-col ul li{
     text-align: left;
     color: #6c757d;
     font-weight: 300;
@@ -340,7 +343,7 @@ nav .fa-solid{
     display: inline-block;
     color: rgb(0, 153, 97);
 }
-.course-col:hover{
+.service-col:hover{
     box-shadow: 0 0 30px 0px rgba(0, 0, 0, 0.7);
 }
 @media (max-width:700px){
@@ -358,7 +361,7 @@ nav .fa-solid{
     width: 70%;
     margin: auto;
     text-align: center;
-    padding-top: 50px;
+    /* padding-top: 50px; */
 }
 
 .team>p{
@@ -367,6 +370,8 @@ nav .fa-solid{
     margin-left: auto;
     margin-right: auto;
     padding: 10px;
+    padding-bottom: 0px;
+
 }
 .team-col{
     flex-basis: 47%;
@@ -407,7 +412,7 @@ nav .fa-solid{
     transition: .5s;
 }
 .team .layer:hover h3{
-    bottom: 49%;
+    bottom: 70%;
     opacity: 1;
     font-size: 2rem;
 }
@@ -426,7 +431,7 @@ nav .fa-solid{
     padding-right: 100px;
 }
 .team .layer:hover p{
-    top: 65%;
+    top: 40%;
     opacity: 1;   
 }
 @media (max-width:700px){
@@ -454,7 +459,6 @@ nav .fa-solid{
 .testimonials{
     width: 80%;
     margin: auto;
-    padding-top: 100px;
     text-align: center;
 }
 
@@ -510,6 +514,8 @@ nav .fa-solid{
     /* background-color: #B2D058; */
     display: flex;
     align-items: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
     
 }
 
