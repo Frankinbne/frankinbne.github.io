@@ -4,10 +4,9 @@
     /* font-family: 'Poppins', sans-serif; */
     font-family: 'Poppins',Arial, sans-serif;
 }
-h1{
+h2{
     color:rgb(0, 153, 97);
 }
-
 p{
     line-height: 22px;
     font-size: 14px;
@@ -165,7 +164,7 @@ nav .fa-solid{
     flex-basis: 48%;
     padding: 30px 2px;
 }
-.about-col h1{
+.about-col h2{
     padding-top: 0;
 }
 .about-col>p{
@@ -236,15 +235,13 @@ nav .fa-solid{
 }
 .product-col .layer h3{
     width: 80%;
-    background-color: #78A452;
-    height: 45px;
-    line-height: 45px;
+    background-color: rgb(0, 153, 97);;
+    height: 30px;
+    line-height: 30px;
     font-weight: 500;
     color: #fff;
     border-radius: 50px;
- 
-   
-    font-size: 26px;
+    font-size: 22px;
     bottom: 12%;
     left: 50%;
     transform: translateX(-50%);
@@ -266,7 +263,7 @@ nav .fa-solid{
 }
 .product-col:hover .layer h3{
     color: #fff;
-    font-size: 30px;
+    font-size: 25px;
     background-color: transparent;
 }
 @media (max-width:700px){
@@ -277,10 +274,10 @@ nav .fa-solid{
         width: 80%;
     }
     .product-col .layer h3{
-        bottom: 30%;
+        bottom: 40%;
     }
     #producth3firstchild{
-        bottom: 27%;
+        bottom: 40%;
     }
 } 
 
@@ -298,7 +295,7 @@ nav .fa-solid{
     margin: auto;
     text-align: center;
 }
-.service h1{
+.service h2{
     font-size: 36px;
     font-weight: 600;
 }
@@ -317,12 +314,13 @@ nav .fa-solid{
   
 .service-col{
     flex-basis: 31%;
-    background: #F4EBD4;
+    background: rgb(237, 251, 240);
     border-radius: 10px;
     /* margin-bottom: 5%; */
     padding: 20px 12px;
     box-sizing: border-box;
     transition: .5s;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
 }
 .service h3{
     text-align: center;
@@ -344,7 +342,7 @@ nav .fa-solid{
     color: rgb(0, 153, 97);
 }
 .service-col:hover{
-    box-shadow: 0 0 30px 0px rgba(0, 0, 0, 0.7);
+    box-shadow: 0 0 30px 0px rgba(0, 153, 97, 0.6);
 }
 @media (max-width:700px){
     .row{
@@ -352,6 +350,9 @@ nav .fa-solid{
     }
     .service>p{
         width: 80%;
+    }
+    .service-col{
+        margin-bottom: 5%;
     }
 } 
 
@@ -436,7 +437,7 @@ nav .fa-solid{
 }
 @media (max-width:700px){
     .team>p{
-        width: 80%;
+        width: 100%;
     }
     .team .layer:hover h3{
         bottom: 80%;
@@ -532,7 +533,7 @@ nav .fa-solid{
   
 
 }
-.cta h1{
+.cta h2{
     color: #fff;
     margin-top: 9%;
     margin-bottom: 40px; 
@@ -540,7 +541,7 @@ nav .fa-solid{
 }
 
 @media(max-width:700px){
-    .cta h1{
+    .cta h2{
         font-size: 24px;
     }
 }
@@ -548,20 +549,28 @@ nav .fa-solid{
 
 
 /*------- Contact Us Page ------------*/
+#contact{
+    width: 100%;
+    background-image: linear-gradient(rgba(12, 11, 11, 0.7),rgba(24, 23, 23, 0.7)),url('../images/contactbackground.jpg');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
 .contact-us{
     margin: auto;
     padding-top: 50px;
     /* text-align: center; */
 }
 
-.contact-us h1{
+.contact-us h2{
     text-align: center;
 }
 .contact-us>p{
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    color: #6c757d;
+    color: #ffffff;
     width: 60%;
     padding: 10px;
 
@@ -591,12 +600,12 @@ nav .fa-solid{
     
 .contact-col div p{
     padding: 0;
-    color: #6c757d;
+    color: #ffffff;
 }
 .contact-col div h5{
     font-size: 20px;
     margin-bottom: 5px;
-    color: #555;
+    color: #ffffff;
     font-weight: 400;
     
 }
@@ -633,12 +642,13 @@ nav .fa-solid{
 
 /* -------------------footer --------------*/
 footer{
-    margin-top: 100px;
+
 
     background-color: rgb(237, 251, 240);
     width: 100%;
     text-align: center;
     padding: 30px 0;
+    padding-top: 100px;
 }
 
 footer .row{
@@ -657,7 +667,7 @@ footer .row .footer-col{
     
 }
 footer .row .footer-col h3{
-    color:#333;
+    color:rgb(0, 153, 97);;
     font-size: 28px;
     padding: 5px;
     text-align: left;
