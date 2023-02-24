@@ -584,25 +584,25 @@ nav .fa-solid{
     margin-bottom: 30px;
     box-sizing: border-box;
 }
-.contact-col div{
+.contact-col>div{
     display: flex;
     align-items:flex-start;
     margin-bottom: 40px;
     margin-left: 20%;
 }
 
-.contact-col div .fa{
+.contact-col>div .fa{
     font-size: 28px;
     color: rgb(0, 153, 97);
     margin: 10px;
     margin-right: 30px;
 }
     
-.contact-col div p{
+.contact-col>div p{
     padding: 0;
     color: #ffffff;
 }
-.contact-col div h5{
+.contact-col>div h5{
     font-size: 20px;
     margin-bottom: 5px;
     color: #ffffff;
@@ -625,7 +625,7 @@ nav .fa-solid{
 @media(max-width: 700px)
 {
 
-    .contact-col div{
+    .contact-col>div{
         display: flex;
         align-items: flex-start;
         margin-bottom: 40px;
