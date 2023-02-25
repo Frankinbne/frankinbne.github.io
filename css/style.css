@@ -22,7 +22,9 @@ section{
     min-height: 100vh;
     display: flex;
     align-items: center;
+    box-sizing: border-box;
 }
+
 .row{
     display: flex;
 }
@@ -607,6 +609,12 @@ nav .fa-solid{
     margin-bottom: 5px;
     color: #ffffff;
     font-weight: 400;
+    
+}
+.contact-col label{
+    color: #ffffff;
+    display: block;
+    padding-bottom: 10px;
     
 }
 .contact-col input, .contact-col textarea{
