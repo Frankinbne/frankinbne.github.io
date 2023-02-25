@@ -16,11 +16,11 @@
                 <div class="navbar" id="navbar">  
                     <i class="fa-solid fa-close" onclick="hideNav()"></i>
                     <ul>
-                        <li><a href="index.html">HOME</a></li>
-                        <li><a href="#aboutus">ABOUT</a></li>
-                        <li><a href="#product">PRODUCT</a></li>
-                        <li><a href="#service">SERVICE</a></li>
-                        <li><a href="#contact">CONTACT</a></li>
+                        <li><a class="navbar-link" href="index.html">HOME</a></li>
+                        <li><a class="navbar-link" href="#aboutus">ABOUT</a></li>
+                        <li><a class="navbar-link" href="#product">PRODUCT</a></li>
+                        <li><a class="navbar-link" href="#service">SERVICE</a></li>
+                        <li><a class="navbar-link" href="#contact">CONTACT</a></li>
                     </ul>
                 </div>
                 <i class="fa-solid fa-bars" onclick="showNav()"></i>
@@ -326,20 +326,42 @@
             navBar.style.right = "-200px";
         }
     //smoothly scrolls the window to the element that the link refers to
-        var navLinks = document.querySelectorAll("nav ul a");
+        // var navLinks = document.querySelectorAll("nav ul a");
 
-        for (var i = 0; i < navLinks.length; i++) {
-            navLinks[i].addEventListener("click", function(event) {
-            event.preventDefault();
-            var targetId = this.getAttribute("href");
-            var targetElement = document.querySelector(targetId);
-            var targetPosition = targetElement.offsetTop;
-            window.scrollTo({
-                top: targetPosition,
-                behavior: "smooth"
-            });
-            });
-        }
+        // for (var i = 0; i < navLinks.length; i++) {
+        //     navLinks[i].addEventListener("click", function(event) {
+        //     event.preventDefault();
+        //     var targetId = this.getAttribute("href");
+        //     var targetElement = document.querySelector(targetId);
+        //     var targetPosition = targetElement.offsetTop;
+        //     window.scrollTo({
+        //         top: targetPosition,
+        //         behavior: "smooth"
+        //     });
+        //     });
+        // }
+
+        const navbarLinks = document.querySelectorAll('.navbar-link');
+
+        // Add an event listener to each navbar link
+        navbarLinks.forEach(link => {
+        link.addEventListener('click', scrollToSection);
+        });
+
+        // Define the scrollToSection function
+        function scrollToSection(event) {
+        // Prevent default link behavior
+        event.preventDefault();
+        
+        // Get the section ID from the link href attribute
+        const sectionID = event.target.getAttribute('href');
+        
+        // Get the section element
+        const section = document.querySelector(sectionID);
+        
+        // Scroll to the section using the scrollIntoView method
+        section.scrollIntoView({ behavior: 'smooth' });
+        }       
     </script> 
         
     </body>
