@@ -101,7 +101,7 @@ nav .fa-solid{
     display: inline-block;
     text-decoration: none;
     color: #fff;
-    border: 1px solid #fff;
+    border: 2px solid #fff;
     padding: 12px 34px;
     background: transparent;
     position: relative;
@@ -572,7 +572,7 @@ nav .fa-solid{
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    color: #ffffff;
+    color: #fff;
     width: 60%;
     padding: 10px;
 
@@ -602,19 +602,20 @@ nav .fa-solid{
     
 .contact-col>div p{
     padding: 0;
-    color: #ffffff;
+    color: #fff;
 }
 .contact-col>div h5{
     font-size: 20px;
     margin-bottom: 5px;
-    color: #ffffff;
+    color: #fff;
     font-weight: 400;
     
 }
 .contact-col label{
-    color: #ffffff;
+    color: #fff;
     display: block;
     padding-bottom: 10px;
+    font-size: 18px;
     
 }
 .contact-col input, .contact-col textarea{
