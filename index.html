@@ -344,27 +344,27 @@
 
 
     // Get all the navbar links
-const navbarLinks = document.querySelectorAll('.navbar-link');
+// const navbarLinks = document.querySelectorAll('.navbar-link');
 
-// Add an event listener to each navbar link
-navbarLinks.forEach(link => {
-  link.addEventListener('click', scrollToSection);
-});
+// // Add an event listener to each navbar link
+// navbarLinks.forEach(link => {
+//   link.addEventListener('click', scrollToSection);
+// });
 
-// Define the scrollToSection function
-function scrollToSection(event) {
-  // Prevent default link behavior
-  event.preventDefault();
+// // Define the scrollToSection function
+// function scrollToSection(event) {
+//   // Prevent default link behavior
+//   event.preventDefault();
   
-  // Get the section ID from the link href attribute
-  const sectionID = event.target.getAttribute('href');
+//   // Get the section ID from the link href attribute
+//   const sectionID = event.target.getAttribute('href');
   
-  // Get the section element
-  const section = document.querySelector(sectionID);
+//   // Get the section element
+//   const section = document.querySelector(sectionID);
   
-  // Scroll to the section using the scrollIntoView method
-  section.scrollIntoView({ behavior: 'instant' });
-}
+//   // Scroll to the section using the scrollIntoView method
+//   section.scrollIntoView({ behavior: 'instant' });
+// }
    
     </script> 
         
