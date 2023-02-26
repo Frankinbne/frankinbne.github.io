@@ -127,7 +127,7 @@
         <div class="cta">
             
             <h2>Don't wait any longer to take care of your vision <br>schedule an appointment with us today <br>and experience the difference our personalized care can make!</h2>
-            <a href="#contact" class="hero-btn">Book Now</a>
+            <a href="#appointment" class="hero-btn">Book Now</a>
         
         </div>
     </section>
@@ -204,7 +204,7 @@
 
     <!-- Contact Us -->
     <section id="contact">
-        <div class="contact-us">
+        <div class="contact-us" id="appointment">
             <h2>Get In Touch With Us</h2>
             <p>We would love to hear from you! If you have any questions or would like to schedule an appointment, please don't hesitate to contact us at ABC Optical. Our team of experienced professionals is always here to help you with your eye care needs.</p>
             <div class="row">
@@ -325,43 +325,47 @@
         function hideNav() {
             navBar.style.right = "-200px";
         }
-    //smoothly scrolls the window to the element that the link refers to
-        // var navLinks = document.querySelectorAll("nav ul a");
+    // smoothly scrolls the window to the element that the link refers to
+    //     var navLinks = document.querySelectorAll("nav ul a");
 
-        // for (var i = 0; i < navLinks.length; i++) {
-        //     navLinks[i].addEventListener("click", function(event) {
-        //     event.preventDefault();
-        //     var targetId = this.getAttribute("href");
-        //     var targetElement = document.querySelector(targetId);
-        //     var targetPosition = targetElement.offsetTop;
-        //     window.scrollTo({
-        //         top: targetPosition,
-        //         behavior: "smooth"
-        //     });
-        //     });
-        // }
+    //     for (var i = 0; i < navLinks.length; i++) {
+    //         navLinks[i].addEventListener("click", function(event) {
+    //         event.preventDefault();
+    //         var targetId = this.getAttribute("href");
+    //         var targetElement = document.querySelector(targetId);
+    //         var targetPosition = targetElement.offsetTop;
+    //         // window.scrollTo({
+    //         //     top: targetPosition,
+    //         //     behavior: "smooth"
+    //         // });
+    //         });
+    //     }
 
-        const navbarLinks = document.querySelectorAll('.navbar-link');
 
-        // Add an event listener to each navbar link
-        navbarLinks.forEach(link => {
-        link.addEventListener('click', scrollToSection);
-        });
 
-        // Define the scrollToSection function
-        function scrollToSection(event) {
-        // Prevent default link behavior
-        event.preventDefault();
-        
-        // Get the section ID from the link href attribute
-        const sectionID = event.target.getAttribute('href');
-        
-        // Get the section element
-        const section = document.querySelector(sectionID);
-        
-        // Scroll to the section using the scrollIntoView method
-        section.scrollIntoView({ behavior: 'smooth' });
-        }       
+    // Get all the navbar links
+const navbarLinks = document.querySelectorAll('.navbar-link');
+
+// Add an event listener to each navbar link
+navbarLinks.forEach(link => {
+  link.addEventListener('click', scrollToSection);
+});
+
+// Define the scrollToSection function
+function scrollToSection(event) {
+  // Prevent default link behavior
+  event.preventDefault();
+  
+  // Get the section ID from the link href attribute
+  const sectionID = event.target.getAttribute('href');
+  
+  // Get the section element
+  const section = document.querySelector(sectionID);
+  
+  // Scroll to the section using the scrollIntoView method
+  section.scrollIntoView({ behavior: 'instant' });
+}
+   
     </script> 
         
     </body>
