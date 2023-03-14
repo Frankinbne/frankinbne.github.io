@@ -1,0 +1,307 @@
+header{
+    min-height: 30vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(18,54,58,0.7),rgba(18,54,58,0.7)),url('../images/background.jpg');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+	box-sizing: border-box;
+}
+
+header h1{
+    /* position: fixed;
+    top: 50%; */
+    font-size: 62px;
+    color: #fff;
+    text-align: center;
+    margin-top: 8%;
+}
+
+/*--------------- About classes page --------------*/
+
+.about-class{
+    width: 80%;
+    margin: auto;
+    margin-top: 80px;
+    /* padding-top: 90px;
+    padding-bottom: 100px; */
+    margin-bottom: 80px;
+    
+}
+
+.about-class .row{
+    align-items: center;
+	justify-content: space-between;
+}
+
+.about-class-col{
+    flex-basis: 48%;
+    padding: 30px 2px;
+}
+.about-class-col h2{
+    padding-top: 0;
+}
+.about-class-col>p{
+    padding: 10px 0 25px;
+    color: #6c757d;
+}
+
+.hero-btn.red-btn{
+    border: 2px solid rgb(245, 99, 75);
+    background: transparent;
+    color: rgb(245, 99, 75);
+}
+.hero-btn.red-btn:hover{
+    border: 1px solid rgb(0, 0, 238);
+    background: rgb(0, 0, 238);
+    color: #fff;
+}
+.hero-btn.red-btn::after{
+    background: #B2D058;
+}
+.hero-btn.red-btn::before{
+    background: #B2D058;
+}
+.content-image{
+    flex-basis: 50%;
+}
+.about-class-col img{
+    width: 100%;
+}
+
+/*--------------- classes --------------*/
+#classes-list{
+    background-image: linear-gradient(rgba(255, 255, 255, 0.7),rgba(255, 255, 255, 0.7)),url('../images/classes-list-bg.png');
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    margin-top: 50px;
+}
+.classes-list{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    min-height: 80vh;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    /* margin-top: 50px; */
+    margin-bottom: 80px;
+
+    
+
+}
+.classes-list > div h2{
+    margin-top: 80px;
+    margin-bottom: 40px;
+}
+.classes-list .row{
+    margin: 0 0 10px 0;
+    display: flex;
+    row-gap: 20px;
+
+}
+.classes-list-col{
+    height: 230px;
+    min-width: 230px;
+    background: rgb(245, 99, 75);
+    box-sizing: border-box;
+    margin-left: 20px; 
+    
+}
+.classes-list .row:nth-child(2) .classes-list-col:first-child{
+    background-image: linear-gradient(rgba(12,11,11,0.9),rgba(12,11,11,0.9)),url('../images/teamate1.png');
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+.classes-list .row:nth-child(2) .classes-list-col:nth-child(2){
+    background-image: linear-gradient(rgba(12,11,11,0.9),rgba(12,11,11,0.9)),url('../images/teamate2.png');
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.classes-list .row:nth-child(2) .classes-list-col:nth-child(3){
+    background-image: linear-gradient(rgba(12,11,11,0.9),rgba(12,11,11,0.9)),url('../images/teamate3.png');
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+.classes-list .row:nth-child(3) .classes-list-col:nth-child(1){
+    background-image: linear-gradient(rgba(12,11,11,0.9),rgba(12,11,11,0.9)),url('../images/teamate4.png');
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+.classes-list .row:nth-child(3) .classes-list-col:nth-child(2){
+    background-image: linear-gradient(rgba(12,11,11,0.9),rgba(12,11,11,0.9)),url('../images/teamate5.png');
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+.classes-list .row:nth-child(3) .classes-list-col:nth-child(3){
+    background-image: linear-gradient(rgba(12,11,11,0.9),rgba(12,11,11,0.9)),url('../images/teamate6.png');
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+.classes-list .row h5{
+    text-align: center;
+    color: #fff;
+    /* font-size: 22px; */
+	background-color: rgb(245, 99, 75);
+	height: 30px;
+	line-height: 30px;
+	margin-bottom: 15px;
+
+}
+.classes-list-col p{
+	color: #fff;
+	text-align: center;
+	
+}
+.classes-list-col:hover h5{
+	background-color: rgb(0, 0, 238);
+}
+@media (max-width:700px){
+    .classes-list-col{
+        width: 100%;
+    }
+}
+
+/* schedules */
+.schedule{
+	justify-content: center;
+	flex-direction: column;
+	margin: 0;
+	padding: 0;
+    margin-bottom: 80px;
+}
+.schedule h2{
+    text-align: center;
+
+    letter-spacing: 1px;
+    color: rgb(245, 99, 75);
+	margin-top: 50px;
+	margin-bottom: 50px;
+
+}
+
+/* Table Styles */
+
+.table-wrapper{
+    /* margin: 10px 70px 70px; */
+    box-shadow: 0px 35px 50px rgba( 0, 0, 0, 0.2 );
+	width: 100%;
+}
+
+.fl-table {
+    /* border-radius: 5px; */
+    font-size: 14px;
+    font-weight: normal;
+    border: none;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 100%;
+    white-space: nowrap;
+    background-color: white;
+}
+
+.fl-table td, .fl-table th {
+    text-align: center;
+    padding: 30px;
+}
+
+.fl-table td {
+    border-right: 1px solid #f8f8f8;
+    font-size: 12px;
+}
+
+.fl-table thead th {
+    color: #ffffff;
+    background: rgb(0, 0, 238);
+}
+
+
+.fl-table thead th:nth-child(odd) {
+    color: #ffffff;
+    background: rgb(0, 0, 238);
+}
+
+.fl-table tr:nth-child(even) {
+    background: #F8F8F8;
+}
+
+tr>td:first-child{
+	background-color: rgb(245, 99, 75);
+}
+
+/* Responsive */
+
+@media (max-width: 767px) {
+    .fl-table {
+        display: block;
+        width: 100%;
+    }
+    .table-wrapper:before{
+        content: "Scroll horizontally >";
+        display: block;
+        text-align: right;
+        font-size: 11px;
+        color: white;
+        padding: 0 0 10px;
+    }
+    .fl-table thead, .fl-table tbody, .fl-table thead th {
+        display: block;
+    }
+    .fl-table thead th:last-child{
+        border-bottom: none;
+    }
+    .fl-table thead {
+        float: left;
+    }
+    .fl-table tbody {
+        width: auto;
+        position: relative;
+        overflow-x: auto;
+    }
+    .fl-table td, .fl-table th {
+        padding: 20px .625em .625em .625em;
+        height: 60px;
+        vertical-align: middle;
+        box-sizing: border-box;
+        overflow-x: hidden;
+        overflow-y: auto;
+        width: 120px;
+        font-size: 13px;
+        text-overflow: ellipsis;
+    }
+    .fl-table thead th {
+        text-align: left;
+        border-bottom: 1px solid #f7f7f9;
+    }
+    .fl-table tbody tr {
+        display: table-cell;
+    }
+    .fl-table tbody tr:nth-child(odd) {
+        background: none;
+    }
+    .fl-table tr:nth-child(even) {
+        background: transparent;
+    }
+    .fl-table tr td:nth-child(odd) {
+        background: #F8F8F8;
+        border-right: 1px solid #E6E4E4;
+    }
+    .fl-table tr td:nth-child(even) {
+        border-right: 1px solid #E6E4E4;
+    }
+    .fl-table tbody td {
+        display: block;
+        text-align: center;
+    }
+}

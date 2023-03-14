@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../css/aboutpage.css">
+</head>
+<body>
+    <nav>
+        <a href="../index.html"><img src="../images/logo2.png" alt="store logo image"></a>
+        <div class="navbar" id="navbar">  
+            <i class="fa-solid fa-close" onclick="hideNav()"></i>
+            <ul>
+                <li><a class="navbar-link" href="../index.html">HOME</a></li>
+                <li><a class="navbar-link" href="about.html">ABOUT</a></li>
+                <li><a class="navbar-link" href="classes.html">ClASSES</a></li>
+                <li><a class="navbar-link" href="pricing.html">PRICING</a></li>
+                <li><a class="navbar-link" href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+        <i class="fa-solid fa-bars" onclick="showNav()"></i>
+    </nav>
+
+
+
+    <script>
+        // JavaScript for toggle menu
+        var navBar= document.getElementById("navbar");
+        function showNav() {
+            navBar.style.right = "0";
+        }
+        function hideNav() {
+            navBar.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>

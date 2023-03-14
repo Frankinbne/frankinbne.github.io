@@ -1,0 +1,191 @@
+/*---------------Pricing --------------*/
+
+.pricing{
+    width: 80%;
+    margin: auto;
+
+    /* padding-top: 90px;
+    padding-bottom: 100px; */
+}
+
+.pricing .row{
+    align-items: center;
+}
+
+.pricing-col{
+    flex-basis: 48%;
+    padding: 30px 2px;
+}
+.pricing-col h2{
+    padding-top: 0;
+    color: #fff;
+    font-style: italic;
+    text-align: center;
+}
+.pricing-col>p{
+    padding: 10px 0 25px;
+    color: #6c757d;
+}
+.pricing-col:first-child{
+    position: relative;
+}
+
+.pricing-col:first-child h2{
+    position: absolute;
+    z-index: 1;
+    top: 40%;
+    left: 20%;
+    font-size: 40px;
+}
+.hero-btn.red-btn{
+    border: 2px solid rgb(245, 99, 75);
+    background: transparent;
+    color: rgb(245, 99, 75);
+}
+.hero-btn.red-btn:hover{
+    border: 1px solid rgb(0, 0, 238);
+    background: rgb(0, 0, 238);
+    color: #fff;
+}
+.hero-btn.red-btn::after{
+    background: #B2D058;
+}
+.hero-btn.red-btn::before{
+    background: #B2D058;
+}
+.content-image{
+    flex-basis: 50%;
+}
+.pricing-col img{
+    width: 100%;
+}
+@media(max-width:700px){
+    .pricing-col:first-child h2{
+        font-size: 25px;
+        left: 15%;
+    }
+    
+}
+
+
+/* 666666666666 */
+
+#classes-list{
+    background-image: linear-gradient(rgba(255, 255, 255, 0.7),rgba(255, 255, 255, 0.7)),url('../images/classes-list-bg.png');
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    /* margin-top: 50px; */
+}
+.classes-list{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    min-height: 80vh;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    /* margin-top: 50px; */
+
+    
+
+}
+.classes-list > div h2{
+    margin-bottom: 40px;
+}
+.classes-list .row{
+    margin: 0 0 10px 0;
+    display: flex;
+    row-gap: 20px;
+
+}
+.classes-list-col{
+    height: 400px;
+    min-width: 300px;
+    background: rgb(245, 99, 75);
+    box-sizing: border-box;
+    margin-left: 20px; 
+    
+}
+.classes-list .row:nth-child(2) .classes-list-col:first-child{
+    background-image: linear-gradient(rgba(12,11,11,0.9),rgba(12,11,11,0.9)),url('../images/teamate1.png');
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+.classes-list .row:nth-child(2) .classes-list-col:nth-child(2){
+    background-image: linear-gradient(rgba(12,11,11,0.9),rgba(12,11,11,0.9)),url('../images/teamate2.png');
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.classes-list .row:nth-child(2) .classes-list-col:nth-child(3){
+    background-image: linear-gradient(rgba(12,11,11,0.9),rgba(12,11,11,0.9)),url('../images/teamate3.png');
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+.classes-list .row:nth-child(3) .classes-list-col:nth-child(1){
+    background-image: linear-gradient(rgba(12,11,11,0.9),rgba(12,11,11,0.9)),url('../images/teamate4.png');
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+.classes-list .row:nth-child(3) .classes-list-col:nth-child(2){
+    background-image: linear-gradient(rgba(12,11,11,0.9),rgba(12,11,11,0.9)),url('../images/teamate5.png');
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+.classes-list .row:nth-child(3) .classes-list-col:nth-child(3){
+    background-image: linear-gradient(rgba(12,11,11,0.9),rgba(12,11,11,0.9)),url('../images/teamate6.png');
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+.classes-list .row h4{
+    text-align: center;
+    color: #fff;
+    /* font-size: 22px; */
+	background-color: rgb(245, 99, 75);
+	height: 50px;
+	line-height: 50px;
+	/* margin-bottom: 15px; */
+
+}
+
+.classes-list-col p{
+	color: #fff;
+	text-align: center;
+    margin: 15px;
+	
+}
+.classes-list .row h4+p{
+    background-color: rgb(0, 0, 238);
+    margin: 0;
+    height: 100px;
+    line-height: 50px;
+    padding-top: 10px;
+
+}
+.classes-list .row h4+p span {
+    font-size: 40px;
+}
+.classes-list-col:hover h4{
+	background-color: rgb(0, 0, 238);
+}
+.classes-list-col:hover h4+p{
+    background-color: rgb(245, 99, 75);
+}
+@media (max-width:700px){
+    .classes-list-col{
+        width: 100%;
+    }
+}
+  
+
+  
+  

@@ -1,0 +1,257 @@
+header{
+    min-height: 30vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(18,54,58,0.7),rgba(18,54,58,0.7)),url('../images/background.jpg');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+header h1{
+    /* position: fixed;
+    top: 50%; */
+    font-size: 62px;
+    color: #fff;
+    text-align: center;
+    margin-top: 8%;
+}
+
+
+.about-cta{
+    margin: 100px auto;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../images/about-cta.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    padding: 50px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.about-cta h1{
+    color: #fff;
+    font-size: 60PX;
+    padding: 0; 
+}
+.about-cta h1 i span:first-child{
+    color: rgb(245, 99, 75);
+}
+.about-cta h1 i span:first-child:hover{
+    color: rgb(0,0,238);
+}
+.about-cta h1 i span:nth-child(2):hover{
+    color: rgb(0,0,238);
+}
+.about-cta h1 i span:nth-child(4):hover{
+    color: rgb(0,0,238);
+}
+.about-cta h1 i span:nth-child(3){
+    color: rgb(245, 99, 75);
+}
+.about-cta h1 i span:nth-child(3):hover{
+    color: rgb(0,0,238);
+}
+
+@media(max-width:700px){
+    .about-cta h1{
+        font-size: 24px;
+    }
+}
+
+
+/* team */
+
+/*---------------- team ----------------*/
+
+.team{
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    /* padding-top: 50px; */
+    margin-bottom: 100px;
+}
+
+.team>p{
+    color: #6c757d;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    padding-bottom: 0px;
+    margin-bottom: 50px;
+
+}
+.team-col{
+    flex-basis: 47%;
+    /* border-radius: 10px; */
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.team-col img{
+    width: 100%;
+    
+}
+
+.team .layer{
+    background: transparent;
+    /* background: rgba(84, 93, 88, 0.7); */
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    transition: .5s;
+}
+.team .layer:hover{
+    background: rgba(0, 0, 238, 0.7);
+    
+}
+.team .layer h3{
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: .5s;
+}
+.team .layer:hover h3{
+    bottom: 70%;
+    opacity: 1;
+    font-size: 2rem;
+}
+.team .layer p{
+    width: 100%;
+    color: #fff;
+    top: 0;
+    left: 50%;
+    /* top:55%； */
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: .5s;
+    box-sizing: border-box;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.team .layer:hover p{
+    top: 40%;
+    opacity: 1;   
+}
+@media (max-width:700px){
+    .team>p{
+        width: 100%;
+    }
+    .team .layer:hover h3{
+        bottom: 80%;
+        opacity: 1;
+    }
+    .team .layer:hover p{
+        top: 25%;
+        opacity: 1; 
+        padding-left: 20px;
+        padding-right: 20px; 
+        font-size: 0.8rem; 
+        line-height: 1rem;
+    }
+}
+
+/* team member */
+#team-members{
+    background-image: linear-gradient(rgba(255, 255, 255, 0.7),rgba(255, 255, 255, 0.7)),url('../images/teamtes-bg.png');
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    margin-top: 50px;
+   
+}
+.team-members{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    min-height: 80vh;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    /* margin-top: 50px; */
+    margin-bottom: 80px;
+
+    
+
+}
+.team-members > div h2{
+    margin-top: 80px;
+    margin-bottom: 40px;
+}
+.team-members .row{
+    margin: 0 0 10px 0;
+    display: flex;
+    row-gap: 20px;
+
+}
+.team-members-col{
+    height: 230px;
+    min-width: 230px;
+    background: rgb(245, 99, 75);
+    box-sizing: border-box;
+    margin-left: 20px; 
+    
+}
+.team-members .row:nth-child(2) .team-members-col:first-child{
+    background-image: linear-gradient(rgba(12,11,11,0.0),rgba(12,11,11,0.0)),url('../images/teamate1.png');
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+.team-members .row:nth-child(2) .team-members-col:nth-child(2){
+    background-image: linear-gradient(rgba(12,11,11,0.3),rgba(12,11,11,0.3)),url('../images/teamate2.png');
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.team-members .row:nth-child(2) .team-members-col:nth-child(3){
+    background-image: linear-gradient(rgba(12,11,11,0.3),rgba(12,11,11,0.3)),url('../images/teamate3.png');
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+.team-members .row:nth-child(3) .team-members-col:nth-child(1){
+    background-image: linear-gradient(rgba(12,11,11,0.3),rgba(12,11,11,0.3)),url('../images/teamate4.png');
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+.team-members .row:nth-child(3) .team-members-col:nth-child(2){
+    background-image: linear-gradient(rgba(12,11,11,0.3),rgba(12,11,11,0.3)),url('../images/teamate5.png');
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+.team-members .row:nth-child(3) .team-members-col:nth-child(3){
+    background-image: linear-gradient(rgba(12,11,11,0.3),rgba(12,11,11,0.3)),url('../images/teamate6.png');
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+.team-members .row p{
+    text-align: center;
+    color: #fff;
+    font-size: 22px;
+    margin-top: 150px;
+}
+@media (max-width:700px){
+    .team-members-col{
+        width: 100%;
+    }
+
+}

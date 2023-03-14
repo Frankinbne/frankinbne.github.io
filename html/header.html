@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ML Strength</title>
+</head>
+<body>
+    <nav>
+        <a href="index.html"><img src="images/logo2.png" alt="store logo image"></a>
+        <div class="navbar" id="navbar">  
+            <i class="fa-solid fa-close" onclick="hideNav()"></i>
+            <ul>
+                <li><a class="navbar-link" href="index.html">HOME</a></li>
+                <li><a class="navbar-link" href="./html/about.html">ABOUT</a></li>
+                <li><a class="navbar-link" href="./html/classes.html">ClASSES</a></li>
+                <li><a class="navbar-link" href="./html/pricing.html">PRICING</a></li>
+                <li><a class="navbar-link" href="./html/contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+        <i class="fa-solid fa-bars" onclick="showNav()"></i>
+    </nav>
+
+
+
+    <script>
+        // JavaScript for toggle menu
+        var navBar= document.getElementById("navbar");
+        function showNav() {
+            navBar.style.right = "0";
+        }
+        function hideNav() {
+            navBar.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
