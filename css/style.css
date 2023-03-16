@@ -422,7 +422,6 @@ nav .fa-solid{
 
 .services .row{
     box-sizing: border-box;
-    
 }
 .services .row>div h2{
     color: rgb(245, 99, 75);
@@ -598,7 +597,7 @@ nav .fa-solid{
 /*---------- club-clocation --------*/
 #club-location{
     width: 100%;
-    background-image: linear-gradient(rgba(255,255,255,0.9),rgba(255,255,255,0.9)),url('../images/contactbackground.jpg');
+    background-image: linear-gradient(rgba(255,255,255,0.9),rgba(255,255,255,0.9)),url('../images/clubs.png');
     background-position: center;
     background-size: cover;
     overflow: hidden;
@@ -684,21 +683,21 @@ nav .fa-solid{
 }
 
 .club-location-col:first-child{
-    background-image: linear-gradient(rgba(12,11,11,0.7),rgba(12,11,11,0.7)),url('../images/service-background.jpg');
+    background-image: linear-gradient(rgba(12,11,11,0.7),rgba(12,11,11,0.7)),url('../images/clubs.png');
     background-position: center;
     background-size: cover;
     overflow: hidden;
 }
 
 .club-location-col:nth-child(3){
-    background-image: linear-gradient(rgba(12,11,11,0.7),rgba(12,11,11,0.7)),url('../images/service-background.jpg');
+    background-image: linear-gradient(rgba(12,11,11,0.7),rgba(12,11,11,0.7)),url('../images/clubs-1.png');
     background-position: center;
     background-size: cover;
     overflow: hidden;
 }
 
 .club-location-col:nth-child(5){
-    background-image: linear-gradient(rgba(12,11,11,0.7),rgba(12,11,11,0.7)),url('../images/service-background.jpg');
+    background-image: linear-gradient(rgba(12,11,11,0.7),rgba(12,11,11,0.7)),url('../images/clubs-2.png');
     background-position: center;
     background-size: cover;
     overflow: hidden;
