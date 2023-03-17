@@ -43,8 +43,7 @@ header h1{
     text-align: center;
 }
 .contact-about-col>p{
-    padding: 0px 0 10
-    px;
+    padding: 0 0 10px;
     color: #6c757d;
    
 }
@@ -288,7 +287,11 @@ header h1{
     background-size: cover;
     overflow: hidden;
 }
+iframe{
+    width:1280px;
+    height:920px; 
 
+}
 
 
 
