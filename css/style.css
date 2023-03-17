@@ -369,14 +369,14 @@ nav .fa-solid{
 }
 .opentime .row > .opentime-col:first-child{
     color: rgb(245, 99, 75);
-    font-size: 70px;
+    font-size: 100px;
 }
 
 .opentime .row > .opentime-col:first-child:hover{
     color: rgb(0,0,238);
 }
 
-.opentime .row:hover h2{
+.opentime .row:hover h3{
     color: rgb(0,0,238);
 
 }
