@@ -541,6 +541,16 @@ nav .fa-solid{
     margin-bottom: 40px; 
     padding: 0; 
 }
+.visuallyhidden{
+    border: 0;
+clip: rect(0 0 0 0);
+height: 1px;
+margin: -1px;
+overflow: hidden;
+padding: 0;
+position: absolute;
+width: 1px;
+}
 
 @media(max-width:700px){
     .subscribe h2{
