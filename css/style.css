@@ -216,6 +216,9 @@ nav .fa-solid{
     .text-box h1{
         font-size: 32px;
     }
+    .text-box{
+        left: 30%;
+    }
 }
 
 /*--------------- About Us Page --------------*/
@@ -988,6 +991,7 @@ footer .row{
         justify-content: space-around;
     margin: auto;
     padding-top: 10px;
+    
     /* gap:1.5rem; */
 }
 footer .row .footer-col{
