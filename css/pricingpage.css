@@ -84,7 +84,7 @@ header h1{
 @media(max-width:700px){
     .pricing-col:first-child h2{
         font-size: 25px;
-        left: 15%;
+        left: 30%;
     }
     
 }
@@ -92,14 +92,14 @@ header h1{
 
 /* 666666666666 */
 
-#classes-list{
+#plan-list{
     background-image: linear-gradient(rgba(255, 255, 255, 0.7),rgba(255, 255, 255, 0.7)),url('../images/classes-list-bg.png');
     background-position: center;
     background-size: cover;
     overflow: hidden;
     /* margin-top: 50px; */
 }
-.classes-list{
+.plan-list{
     width: 80%;
     display: flex;
     flex-direction: column;
@@ -114,16 +114,16 @@ header h1{
     
 
 }
-.classes-list > div h2{
+.plan-list > div h2{
     margin-bottom: 40px;
 }
-.classes-list .row{
+.plan-list .row{
     margin: 0 0 10px 0;
     display: flex;
     row-gap: 20px;
 
 }
-.classes-list-col{
+.plan-list-col{
     height: 400px;
     min-width: 300px;
     background: rgb(245, 99, 75);
@@ -131,44 +131,44 @@ header h1{
     margin-left: 20px; 
     
 }
-.classes-list .row:nth-child(2) .classes-list-col:first-child{
+.plan-list .row:nth-child(2) .plan-list-col:first-child{
     background-image: linear-gradient(rgba(12,11,11,0.9),rgba(12,11,11,0.9)),url('../images/teamate1.png');
     background-position: center;
     background-size: cover;
     overflow: hidden;
 }
-.classes-list .row:nth-child(2) .classes-list-col:nth-child(2){
+.plan-list .row:nth-child(2) .plan-list-col:nth-child(2){
     background-image: linear-gradient(rgba(12,11,11,0.9),rgba(12,11,11,0.9)),url('../images/teamate2.png');
     background-position: center;
     background-size: cover;
     overflow: hidden;
 }
 
-.classes-list .row:nth-child(2) .classes-list-col:nth-child(3){
+.plan-list .row:nth-child(2) .plan-list-col:nth-child(3){
     background-image: linear-gradient(rgba(12,11,11,0.9),rgba(12,11,11,0.9)),url('../images/teamate3.png');
     background-position: center;
     background-size: cover;
     overflow: hidden;
 }
-.classes-list .row:nth-child(3) .classes-list-col:nth-child(1){
+.plan-list .row:nth-child(3) .plan-list-col:nth-child(1){
     background-image: linear-gradient(rgba(12,11,11,0.9),rgba(12,11,11,0.9)),url('../images/teamate4.png');
     background-position: center;
     background-size: cover;
     overflow: hidden;
 }
-.classes-list .row:nth-child(3) .classes-list-col:nth-child(2){
+.plan-list .row:nth-child(3) .plan-list-col:nth-child(2){
     background-image: linear-gradient(rgba(12,11,11,0.9),rgba(12,11,11,0.9)),url('../images/teamate5.png');
     background-position: center;
     background-size: cover;
     overflow: hidden;
 }
-.classes-list .row:nth-child(3) .classes-list-col:nth-child(3){
+.plan-list .row:nth-child(3) .plan-list-col:nth-child(3){
     background-image: linear-gradient(rgba(12,11,11,0.9),rgba(12,11,11,0.9)),url('../images/teamate6.png');
     background-position: center;
     background-size: cover;
     overflow: hidden;
 }
-.classes-list .row h4{
+.plan-list .row h4{
     text-align: center;
     color: #fff;
     /* font-size: 22px; */
@@ -179,32 +179,36 @@ header h1{
 
 }
 
-.classes-list-col p{
+.plan-list-col p{
 	color: #fff;
 	text-align: center;
     margin: 15px;
 	
 }
-.classes-list .row h4+p{
+.plan-list .row h4+p{
     background-color: rgb(0, 0, 238);
     margin: 0;
     height: 100px;
-    line-height: 50px;
+    line-height: 40px;
     padding-top: 10px;
 
 }
-.classes-list .row h4+p span {
+.plan-list .row h4+p span {
     font-size: 40px;
 }
-.classes-list-col:hover h4{
+.plan-list-col:hover h4{
 	background-color: rgb(0, 0, 238);
 }
-.classes-list-col:hover h4+p{
+.plan-list-col:hover h4+p{
     background-color: rgb(245, 99, 75);
 }
 @media (max-width:700px){
-    .classes-list-col{
+    .plan-list-col{
         width: 100%;
+    }
+    .plan-list{
+        margin-top: 40px;
+        margin-bottom: 40px;
     }
 }
   
