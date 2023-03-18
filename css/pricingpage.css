@@ -162,7 +162,7 @@ header h1{
     background: rgb(245, 99, 75);
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    /* margin-left: 20px;  */
+    margin-left: 20px; 
     
 }
 .plan-list .row:nth-child(2) .plan-list-col:first-child{
@@ -255,6 +255,9 @@ header h1{
     .plan-list{
         margin-top: 40px;
         margin-bottom: 40px;
+    }
+    .plan-list-col{
+        margin-left: 0px;
     }
 }
   
