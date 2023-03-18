@@ -241,7 +241,7 @@ header h1 {
         width: 100%;
     }
     .classes-list-col{
-        margin-left: auto;
+        margin-left: 0px;
     }
 }
 
