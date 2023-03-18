@@ -26,6 +26,8 @@ header h1{
 
     /* padding-top: 90px;
     padding-bottom: 100px; */
+    margin-top: 80px;
+    margin-bottom: 80px;
 }
 
 .contact-about .row{
@@ -92,7 +94,7 @@ header h1{
 /*-------- help ----------*/
 
 .contact-help{
-    margin: 100px auto;
+    margin: 0px auto 100px auto;
     width: 100%;
     background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../images/about-cta.jpg);
     background-position: center;
@@ -469,6 +471,14 @@ iframe{
 #help-function h5{
     color: rgb(245, 99, 75);
     font-weight: 700;
+}
+
+@media(max-width:1080px){
+    button.hero-btn{
+        margin-bottom: 10px;
+        width: 100%;
+    }
+    
 }   
 @media(max-width: 700px)
 {
