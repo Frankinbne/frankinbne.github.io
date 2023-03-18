@@ -1,15 +1,25 @@
-header{
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+header {
     min-height: 30vh;
     width: 100%;
-    background-image: linear-gradient(rgba(18,54,58,0.7),rgba(18,54,58,0.7)),url('../images/background.jpg');
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(18, 54, 58, 0.7)), to(rgba(18, 54, 58, 0.7))), url('../images/background.jpg');
+    background-image: -o-linear-gradient(rgba(18, 54, 58, 0.7), rgba(18, 54, 58, 0.7)), url('../images/background.jpg');
+    background-image: linear-gradient(rgba(18, 54, 58, 0.7), rgba(18, 54, 58, 0.7)), url('../images/background.jpg');
     background-position: center;
     background-size: cover;
     position: relative;
     overflow: hidden;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
-header h1{
+header h1 {
     /* position: fixed;
     top: 50%; */
     font-size: 62px;
@@ -17,51 +27,68 @@ header h1{
     text-align: center;
     margin-top: 8%;
 }
-@media(max-width:700px){
-    header h1{
+
+@media(max-width:700px) {
+    header h1 {
         font-size: 50px;
         margin-top: 28%;
     }
 }
 
-.about-cta{
+.about-cta {
     margin: 100px auto;
     width: 100%;
-    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../images/about-cta.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(../images/about-cta.jpg);
+    background-image: -o-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/about-cta.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/about-cta.jpg);
     background-position: center;
     background-size: cover;
     text-align: center;
     padding: 50px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
 }
-.about-cta h1{
+
+.about-cta h1 {
     color: #fff;
     font-size: 60PX;
-    padding: 0; 
-}
-.about-cta h1 i span:first-child{
-    color: rgb(245, 99, 75);
-}
-.about-cta h1 i span:first-child:hover{
-    color: rgb(0,0,238);
-}
-.about-cta h1 i span:nth-child(2):hover{
-    color: rgb(0,0,238);
-}
-.about-cta h1 i span:nth-child(4):hover{
-    color: rgb(0,0,238);
-}
-.about-cta h1 i span:nth-child(3){
-    color: rgb(245, 99, 75);
-}
-.about-cta h1 i span:nth-child(3):hover{
-    color: rgb(0,0,238);
+    padding: 0;
 }
 
-@media(max-width:700px){
-    .about-cta h1{
+.about-cta h1 i span:first-child {
+    color: rgb(245, 99, 75);
+}
+
+.about-cta h1 i span:first-child:hover {
+    color: rgb(0, 0, 238);
+}
+
+.about-cta h1 i span:nth-child(2):hover {
+    color: rgb(0, 0, 238);
+}
+
+.about-cta h1 i span:nth-child(4):hover {
+    color: rgb(0, 0, 238);
+}
+
+.about-cta h1 i span:nth-child(3) {
+    color: rgb(245, 99, 75);
+}
+
+.about-cta h1 i span:nth-child(3):hover {
+    color: rgb(0, 0, 238);
+}
+
+@media(max-width:700px) {
+    .about-cta h1 {
         font-size: 24px;
     }
 }
@@ -71,7 +98,7 @@ header h1{
 
 /*---------------- team ----------------*/
 
-.team{
+.team {
     width: 70%;
     margin: auto;
     text-align: center;
@@ -79,7 +106,7 @@ header h1{
     margin-bottom: 100px;
 }
 
-.team>p{
+.team>p {
     color: #6c757d;
     width: 60%;
     margin-left: auto;
@@ -89,19 +116,22 @@ header h1{
     margin-bottom: 50px;
 
 }
-.team-col{
+
+.team-col {
+    -ms-flex-preferred-size: 47%;
     flex-basis: 47%;
     /* border-radius: 10px; */
     margin-bottom: 30px;
     position: relative;
     overflow: hidden;
 }
-.team-col img{
+
+.team-col img {
     width: 100%;
-    
+
 }
 
-.team .layer{
+.team .layer {
     background: transparent;
     /* background: rgba(84, 93, 88, 0.7); */
     height: 100%;
@@ -109,153 +139,209 @@ header h1{
     top: 0;
     left: 0;
     position: absolute;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
     transition: .5s;
 }
-.team .layer:hover{
+
+.team .layer:hover {
     background: rgba(0, 0, 238, 0.7);
-    
+
 }
-.team .layer h3{
+
+.team .layer h3 {
     width: 100%;
     font-weight: 500;
     color: #fff;
     font-size: 26px;
     bottom: 0;
     left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
     transform: translateX(-50%);
     position: absolute;
     opacity: 0;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
     transition: .5s;
 }
-.team .layer:hover h3{
+
+.team .layer:hover h3 {
     bottom: 70%;
     opacity: 1;
     font-size: 2rem;
 }
-.team .layer p{
+
+.team .layer p {
     width: 100%;
     color: #fff;
     top: 0;
     left: 50%;
     /* top:55%； */
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
     transform: translateX(-50%);
     position: absolute;
     opacity: 0;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
     transition: .5s;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     padding-left: 100px;
     padding-right: 100px;
 }
-.team .layer:hover p{
+
+.team .layer:hover p {
     top: 40%;
-    opacity: 1;   
+    opacity: 1;
 }
-@media (max-width:700px){
-    .team>p{
+
+@media (max-width:700px) {
+    .team>p {
         width: 100%;
     }
-    .team .layer:hover h3{
+
+    .team .layer:hover h3 {
         bottom: 80%;
         opacity: 1;
     }
-    .team .layer:hover p{
+
+    .team .layer:hover p {
         top: 25%;
-        opacity: 1; 
+        opacity: 1;
         padding-left: 20px;
-        padding-right: 20px; 
-        font-size: 0.8rem; 
+        padding-right: 20px;
+        font-size: 0.8rem;
         line-height: 1rem;
     }
 }
 
 /* team member */
-#team-members{
-    background-image: linear-gradient(rgba(255, 255, 255, 0.7),rgba(255, 255, 255, 0.7)),url('../images/teamtes-bg.png');
+#team-members {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.7)), to(rgba(255, 255, 255, 0.7))), url('../images/teamtes-bg.png');
+    background-image: -o-linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url('../images/teamtes-bg.png');
+    background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url('../images/teamtes-bg.png');
     background-position: center;
     background-size: cover;
     overflow: hidden;
     margin-top: 50px;
-   
+
 }
-.team-members{
+
+.team-members {
     width: 80%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     row-gap: 20px;
     min-height: 80vh;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
     /* margin-top: 50px; */
     margin-bottom: 80px;
 
-    
+
 
 }
-.team-members > div h2{
+
+.team-members>div h2 {
     margin-top: 80px;
     margin-bottom: 40px;
 }
-.team-members .row{
+
+.team-members .row {
     margin: 0 0 10px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     row-gap: 20px;
 
 }
-.team-members-col{
+
+.team-members-col {
     height: 230px;
     min-width: 230px;
     background: rgb(245, 99, 75);
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    margin-left: 20px; 
-    
+    margin-left: 20px;
+
 }
-.team-members .row:nth-child(2) .team-members-col:first-child{
-    background-image: linear-gradient(rgba(12,11,11,0.0),rgba(12,11,11,0.0)),url('../images/teamate1.png');
-    background-position: center;
-    background-size: cover;
-    overflow: hidden;
-}
-.team-members .row:nth-child(2) .team-members-col:nth-child(2){
-    background-image: linear-gradient(rgba(12,11,11,0.3),rgba(12,11,11,0.3)),url('../images/teamate2.png');
+
+.team-members .row:nth-child(2) .team-members-col:first-child {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(12, 11, 11, 0.0)), to(rgba(12, 11, 11, 0.0))), url('../images/teamate1.png');
+    background-image: -o-linear-gradient(rgba(12, 11, 11, 0.0), rgba(12, 11, 11, 0.0)), url('../images/teamate1.png');
+    background-image: linear-gradient(rgba(12, 11, 11, 0.0), rgba(12, 11, 11, 0.0)), url('../images/teamate1.png');
     background-position: center;
     background-size: cover;
     overflow: hidden;
 }
 
-.team-members .row:nth-child(2) .team-members-col:nth-child(3){
-    background-image: linear-gradient(rgba(12,11,11,0.3),rgba(12,11,11,0.3)),url('../images/teamate3.png');
+.team-members .row:nth-child(2) .team-members-col:nth-child(2) {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(12, 11, 11, 0.3)), to(rgba(12, 11, 11, 0.3))), url('../images/teamate2.png');
+    background-image: -o-linear-gradient(rgba(12, 11, 11, 0.3), rgba(12, 11, 11, 0.3)), url('../images/teamate2.png');
+    background-image: linear-gradient(rgba(12, 11, 11, 0.3), rgba(12, 11, 11, 0.3)), url('../images/teamate2.png');
     background-position: center;
     background-size: cover;
     overflow: hidden;
 }
-.team-members .row:nth-child(3) .team-members-col:nth-child(1){
-    background-image: linear-gradient(rgba(12,11,11,0.3),rgba(12,11,11,0.3)),url('../images/teamate4.png');
+
+.team-members .row:nth-child(2) .team-members-col:nth-child(3) {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(12, 11, 11, 0.3)), to(rgba(12, 11, 11, 0.3))), url('../images/teamate3.png');
+    background-image: -o-linear-gradient(rgba(12, 11, 11, 0.3), rgba(12, 11, 11, 0.3)), url('../images/teamate3.png');
+    background-image: linear-gradient(rgba(12, 11, 11, 0.3), rgba(12, 11, 11, 0.3)), url('../images/teamate3.png');
     background-position: center;
     background-size: cover;
     overflow: hidden;
 }
-.team-members .row:nth-child(3) .team-members-col:nth-child(2){
-    background-image: linear-gradient(rgba(12,11,11,0.3),rgba(12,11,11,0.3)),url('../images/teamate5.png');
+
+.team-members .row:nth-child(3) .team-members-col:nth-child(1) {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(12, 11, 11, 0.3)), to(rgba(12, 11, 11, 0.3))), url('../images/teamate4.png');
+    background-image: -o-linear-gradient(rgba(12, 11, 11, 0.3), rgba(12, 11, 11, 0.3)), url('../images/teamate4.png');
+    background-image: linear-gradient(rgba(12, 11, 11, 0.3), rgba(12, 11, 11, 0.3)), url('../images/teamate4.png');
     background-position: center;
     background-size: cover;
     overflow: hidden;
 }
-.team-members .row:nth-child(3) .team-members-col:nth-child(3){
-    background-image: linear-gradient(rgba(12,11,11,0.3),rgba(12,11,11,0.3)),url('../images/teamate6.png');
+
+.team-members .row:nth-child(3) .team-members-col:nth-child(2) {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(12, 11, 11, 0.3)), to(rgba(12, 11, 11, 0.3))), url('../images/teamate5.png');
+    background-image: -o-linear-gradient(rgba(12, 11, 11, 0.3), rgba(12, 11, 11, 0.3)), url('../images/teamate5.png');
+    background-image: linear-gradient(rgba(12, 11, 11, 0.3), rgba(12, 11, 11, 0.3)), url('../images/teamate5.png');
     background-position: center;
     background-size: cover;
     overflow: hidden;
 }
-.team-members .row p{
+
+.team-members .row:nth-child(3) .team-members-col:nth-child(3) {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(12, 11, 11, 0.3)), to(rgba(12, 11, 11, 0.3))), url('../images/teamate6.png');
+    background-image: -o-linear-gradient(rgba(12, 11, 11, 0.3), rgba(12, 11, 11, 0.3)), url('../images/teamate6.png');
+    background-image: linear-gradient(rgba(12, 11, 11, 0.3), rgba(12, 11, 11, 0.3)), url('../images/teamate6.png');
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.team-members .row p {
     text-align: center;
     color: #fff;
     font-size: 22px;
     margin-top: 150px;
 }
-@media (max-width:700px){
-    .team-members-col{
+
+@media (max-width:700px) {
+    .team-members-col {
         width: 100%;
     }
 
