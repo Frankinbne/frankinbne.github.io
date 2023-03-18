@@ -17,7 +17,12 @@ header h1{
     text-align: center;
     margin-top: 8%;
 }
-
+@media(max-width:700px){
+    header h1{
+        font-size: 50px;
+        margin-top: 28%;
+    }
+}
 
 .about-cta{
     margin: 100px auto;
