@@ -344,5 +344,8 @@ header h1 {
     .team-members-col {
         width: 100%;
     }
+    .team-members-col{
+        margin-left: 0px;
+    }
 
 }

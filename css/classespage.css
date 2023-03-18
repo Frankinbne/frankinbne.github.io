@@ -240,6 +240,9 @@ header h1 {
     .classes-list-col {
         width: 100%;
     }
+    .classes-list-col{
+        margin-left: auto;
+    }
 }
 
 /* schedules */
