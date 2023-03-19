@@ -97,13 +97,13 @@ header h1 {
     color: #fff;
 }
 
-.hero-btn.red-btn::after {
+/* .hero-btn.red-btn::after {
     background: #B2D058;
 }
 
 .hero-btn.red-btn::before {
     background: #B2D058;
-}
+} */
 
 .content-image {
     -ms-flex-preferred-size: 50%;
@@ -202,13 +202,18 @@ header h1 {
 }
 
 .contact-help a {
+    font-size: 14px;
     width: 300px;
     background-color: rgb(245, 99, 75);
     height: 50px;
     line-height: 50px;
     text-decoration: none;
     color: #fff;
-    font-size: 20px;
+    
+}
+
+.contact-help a:hover{
+        background-color: rgb(0, 0, 238);
 }
 
 #video-overlay {
