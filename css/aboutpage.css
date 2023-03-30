@@ -35,6 +35,68 @@ header h1 {
     }
 }
 
+/*--------------- About Us Page --------------*/
+
+.about-us {
+    width: 80%;
+    margin: auto;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    /* padding-top: 90px;
+    padding-bottom: 100px; */
+}
+
+.about-us .row {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.about-col {
+    -ms-flex-preferred-size: 48%;
+    flex-basis: 48%;
+    padding: 30px 2px;
+}
+
+.about-col h2 {
+    padding-top: 0;
+}
+
+.about-col>p {
+    padding: 10px 0 25px;
+    color: #6c757d;
+}
+
+.hero-btn.red-btn {
+    border: 2px solid rgb(245, 99, 75);
+    background: transparent;
+    color: rgb(245, 99, 75);
+}
+
+.hero-btn.red-btn:hover {
+    border: 1px solid rgb(0, 0, 238);
+    background: rgb(0, 0, 238);
+    color: #fff;
+}
+
+.hero-btn.red-btn::after {
+    background: #B2D058;
+}
+
+.hero-btn.red-btn::before {
+    background: #B2D058;
+}
+
+.content-image {
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+}
+
+.about-col img {
+    width: 100%;
+}
+
+
 .about-cta {
     margin: 100px auto;
     width: 100%;
@@ -94,7 +156,7 @@ header h1 {
 }
 
 
-/* team */
+
 
 /*---------------- team ----------------*/
 
